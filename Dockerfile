@@ -10,3 +10,5 @@ COPY . .
 EXPOSE 5000
 
 CMD ["python", "run.py"]
+
+# Image de production
