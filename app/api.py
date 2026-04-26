@@ -1,11 +1,16 @@
 import logging
 
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, jsonify, render_template, request
 
 from app import db
 from app.models import Task
 
-api_bp = Blueprint("api", __name__)
+api_bp = Blueprint("api", __name__, template_folder="../templates")
+
+
+@api_bp.route("/")
+def index():
+    return render_template("index.html")
 logger = logging.getLogger(__name__)
 
 
@@ -73,3 +78,5 @@ def delete_task(task_id):
     db.session.commit()
     logger.info("Deleted task id=%d", task_id)
     return "", 204
+
+# Endpoints CRUD pour les tâches
