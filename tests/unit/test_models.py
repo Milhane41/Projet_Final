@@ -35,5 +35,3 @@ def test_task_description_default(app):
         db.session.add(task)
         db.session.commit()
         assert task.description == ""
-
-# Tests du modèle Task

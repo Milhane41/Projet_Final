@@ -14,5 +14,3 @@ instance/
 *.tfstate.backup
 .terraform/
 .terraform.lock.hcl
-
-# Fichiers temporaires

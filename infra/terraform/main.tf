@@ -139,5 +139,3 @@ resource "azurerm_linux_virtual_machine" "taskflow" {
     version   = "latest"
   }
 }
-
-# Infrastructure Azure

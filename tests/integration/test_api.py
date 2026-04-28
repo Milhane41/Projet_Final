@@ -85,5 +85,3 @@ def test_filter_by_status(client):
     assert r.status_code == 200
     assert len(r.json) == 2
     assert all(t["status"] == "done" for t in r.json)
-
-# Tests des endpoints API

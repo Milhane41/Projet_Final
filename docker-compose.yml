@@ -70,5 +70,3 @@ volumes:
   app_data:
   grafana_data:
   loki_data:
-
-# Stack complète
