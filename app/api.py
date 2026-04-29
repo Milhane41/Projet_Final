@@ -78,3 +78,5 @@ def delete_task(task_id):
     db.session.commit()
     logger.info("Deleted task id=%d", task_id)
     return "", 204
+
+# Endpoints CRUD pour les tâches
