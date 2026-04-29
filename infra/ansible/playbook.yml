@@ -3,7 +3,7 @@
   hosts: servers
   become: true
   vars:
-    app_image: "ghcr.io/YOUR_GITHUB_USERNAME/taskflow"
+    app_image: "ghcr.io/milhane41/taskflow"
     image_tag: "latest"
     project_dir: /opt/taskflow
 
